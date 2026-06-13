@@ -1,8 +1,9 @@
 {
   "metadata": {
     "name": "N100FP",
-    "makeAndModel": "Cessna Skylane 182Q (C182)",
-    "aircraftInfo": "Alex's Skylane 182Q checklist"
+    "makeAndModel": "Cessna Skylane 182P (C182)",
+    "aircraftInfo": "N100FP",
+    "manufacturerInfo": "Cessna"
   },
   "groups": [
     {
@@ -92,7 +93,8 @@
             },
             {
               "prompt": "EMPENNAGE",
-              "type": "ITEM_TITLE"
+              "type": "ITEM_TITLE",
+              "centered": true
             },
             {
               "prompt": "Elevator, Rudder",
@@ -111,7 +113,8 @@
             },
             {
               "prompt": "RIGHT WING",
-              "type": "ITEM_TITLE"
+              "type": "ITEM_TITLE",
+              "centered": true
             },
             {
               "prompt": "Flaps, Aileron",
@@ -150,7 +153,8 @@
             },
             {
               "prompt": "NOSE",
-              "type": "ITEM_TITLE"
+              "type": "ITEM_TITLE",
+              "centered": true
             },
             {
               "prompt": "Right Static Port",
@@ -178,7 +182,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Oil Dip Stick (Min 8 qts)",
+              "prompt": "Oil Dip Stick (Min 9 qts)",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -199,7 +203,8 @@
             },
             {
               "prompt": "LEFT WING",
-              "type": "ITEM_TITLE"
+              "type": "ITEM_TITLE",
+              "centered": true
             },
             {
               "prompt": "Fuel Tank Sump Drain",
@@ -332,13 +337,14 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Foreflight & Recorders",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
               "prompt": "Sentry On",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Foreflight & Recorders",
-              "type": "ITEM_TITLE"
             },
             {
               "prompt": "Foreflight Devices",
@@ -453,6 +459,11 @@
             {
               "prompt": "Parking Brake",
               "expectation": "RELEASE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "FLAPS RETRACTED",
+              "expectation": "DOUBLE CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -704,6 +715,61 @@
               "prompt": "Tower",
               "expectation": "CONTACT",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "USEFUL SPEEDS TO REMEMBER",
+              "type": "ITEM_PLAINTEXT",
+              "centered": true
+            },
+            {
+              "prompt": "Vx",
+              "expectation": "60 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vy",
+              "expectation": "89 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vs0",
+              "expectation": "63 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vs1",
+              "expectation": "68 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Va",
+              "expectation": "126 MPH @ 2950lbs",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vne",
+              "expectation": "198 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vfe",
+              "expectation": "<160 MPH - 10 DEG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vfe",
+              "expectation": "<110 MPH > 10 DEG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vglide",
+              "expectation": "80 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "V short field",
+              "expectation": "69 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
         },
@@ -727,12 +793,12 @@
             },
             {
               "prompt": "Rotate (VR)",
-              "expectation": "70 MIAS",
+              "expectation": "60 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Climb",
-              "expectation": "90-100 MIAS",
+              "expectation": "89 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -782,12 +848,12 @@
             },
             {
               "prompt": "Rotate (VR)",
-              "expectation": "50 KIAS",
+              "expectation": "55 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Climb",
-              "expectation": "57 KIAS",
+              "expectation": "60 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -797,7 +863,7 @@
             },
             {
               "prompt": "Climb",
-              "expectation": "80 KIAS",
+              "expectation": "90 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -817,7 +883,7 @@
             },
             {
               "prompt": "Airspeed (1000' AGL)",
-              "expectation": "85-95 KIAS",
+              "expectation": "90 - 100 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -842,7 +908,7 @@
           "items": [
             {
               "prompt": "Airspeed",
-              "expectation": "78 KIAS at sea level to 72 KIAS at 10,000 feet",
+              "expectation": "89 MPH at S.L. ,  80 MPH @ 10K",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1009,6 +1075,31 @@
               "prompt": "Autopilot",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "GUMPS CHECK",
+              "type": "ITEM_PLAINTEXT",
+              "centered": true
+            },
+            {
+              "prompt": "GAS (AS NEEDED)",
+              "type": "ITEM_PLAINTEXT"
+            },
+            {
+              "prompt": "UNDERCARRIAGE (COWLS OPEN)",
+              "type": "ITEM_PLAINTEXT"
+            },
+            {
+              "prompt": "MIXTURE (FULL RICH)",
+              "type": "ITEM_PLAINTEXT"
+            },
+            {
+              "prompt": "PROPELLER (FULL IN)",
+              "type": "ITEM_PLAINTEXT"
+            },
+            {
+              "prompt": "SEAT BELTS (SECURE)",
+              "type": "ITEM_PLAINTEXT"
             }
           ]
         },
@@ -1022,7 +1113,7 @@
             },
             {
               "prompt": "Airspeed",
-              "expectation": "70 KIAS",
+              "expectation": "75 - 80 MPH",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -1037,7 +1128,12 @@
             },
             {
               "prompt": "Airspeed",
-              "expectation": "60 KIAS",
+              "expectation": "70 MPH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Immediately After Landing",
+              "expectation": "FLAPS UP. BRAKES.",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -1188,6 +1284,11 @@
             {
               "prompt": "Doors, Baggage Door",
               "expectation": "LOCK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Plan",
+              "expectation": "CLOSE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
