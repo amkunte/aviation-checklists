@@ -7,13 +7,40 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Explicit so builds don't depend on the repo-level "Workflow permissions" setting.
+permissions:
+  contents: write       # create releases and tags
+  pull-requests: write  # compiler posts a download link on PRs
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout current repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
+      # Pinned: an upstream change must not silently alter the checklist output.
+      # To upgrade, bump these SHAs in a PR and re-verify the .fmd in ForeFlight.
       - name: Compile checklists
-        uses: alexnj/aviation-checklist-compiler-action@main
+        uses: alexnj/aviation-checklist-compiler-action@914036e2c5fbd0532935256903730adef0ec6cc7 # main @ 2026-02-03
+        with:
+          efis_editor_ref: 995a2efb9dcfc2250d037cdc45611431835d43aa # rdamazio/efis-editor @ 2026-06-04
+
+      # The compiler overwrites a single "latest" release. Also keep a permanent,
+      # dated release per build so it's clear what's loaded in ForeFlight.
+      - name: Compute release tag
+        if: github.ref == 'refs/heads/main'
+        id: tag
+        run: echo "tag=v$(date -u +%Y.%m.%d)-${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+
+      - name: Publish versioned release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: Checklists ${{ steps.tag.outputs.tag }}
+          body: |
+            Built from ${{ github.sha }}.
+            Commit: ${{ github.event.head_commit.message }}
+          files: output-release/*
