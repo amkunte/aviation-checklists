@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "name": "N5535V",
-    "makeAndModel": "Piper Archer II (PA-28-181)",
-    "aircraftInfo": "N5535V",
+    "name": "N9658K",
+    "makeAndModel": "1976 Piper Archer II (PA-28-181)",
+    "aircraftInfo": "N9658K",
     "manufacturerInfo": "Piper"
   },
   "groups": [
@@ -10,11 +10,290 @@
       "title": "Normal Procedures",
       "checklists": [
         {
+          "title": "Preflight Inspection",
+          "items": [
+            {
+              "prompt": "PREFLIGHT CABIN",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Hobbs, Tach",
+              "expectation": "CHECK, VERIFY, RECORD",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Documents (ARROW)",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Control Lock",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Avionics Master Switch",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Master Switch",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Quantity Indicators",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Turn Coordinator Gyro",
+              "expectation": "AUDIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flaps",
+              "expectation": "EXTEND",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Lights, Pitot Heat",
+              "expectation": "ON, CHECK, OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Master Switch",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Seat Height",
+              "expectation": "ADJUST",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Baggage Door",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Keys available",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Sentry Installed and Turned On",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad connected to Sentry",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "EMPENNAGE",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
+              "prompt": "Stabilator, Rudder",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Stabilator Trim",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Antennas",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "RIGHT WING",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
+              "prompt": "Flaps, Aileron",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Wing Tip",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Leading Edge",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Tire Chock",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Tank Sump Drain",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Main Gear, Brake, Tire",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Quantity",
+              "expectation": "CHECK, SECURE CAP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "NOSE",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
+              "prompt": "Right Static Port",
+              "expectation": "CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Cooling Air Inlets",
+              "expectation": "CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller and Spinner",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Induction Air Filter",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Nose Wheel, Strut, Tire",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Oil Dip Stick",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Strainer",
+              "expectation": "DRAIN (4s)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Access Doors",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Left Static Port",
+              "expectation": "CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "LEFT WING",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
+              "prompt": "Fuel Tank Sump Drain",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Main Gear, Brake, Tire",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Quantity",
+              "expectation": "CHECK, SECURE CAP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Pitot Tube",
+              "expectation": "CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Stall Warning Vane",
+              "expectation": "CLEAR/CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Tank Vent",
+              "expectation": "CLEAR",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Tire Chock",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Leading Edge",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Wing Tip",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Aileron, Flap",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Final Walkaround",
+              "expectation": "COMPLETE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ]
+        },
+        {
           "title": "Before Starting Engine",
           "items": [
             {
+              "prompt": "Seats & Belts",
+              "expectation": "ADJUST & LOCK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Controls",
+              "expectation": "FREE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Radios & Switches",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Circuit Breakers",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Door",
+              "expectation": "CLOSED & LATCHED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Brakes",
-              "expectation": "SET",
+              "expectation": "TEST & SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -43,6 +322,11 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Fuel Quantities",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Key",
               "expectation": "INSERT",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -55,6 +339,16 @@
             {
               "prompt": "Mixture",
               "expectation": "FULL RICH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Primer",
+              "expectation": "AS REQUIRED, THEN LOCK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Area",
+              "expectation": "CLEAR",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -73,7 +367,12 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Avionics",
+              "prompt": "Electric Fuel Pump",
+              "expectation": "OFF - CHECK FUEL PRESSURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Radios, Avionics, Beacon",
               "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -143,8 +442,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Oil Temp/Pressure",
-              "expectation": "CHECK GREEN",
+              "prompt": "Engine Instruments & Ammeter",
+              "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -180,6 +479,11 @@
             {
               "prompt": "Flight Instruments",
               "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Radios",
+              "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -223,7 +527,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Doors",
+              "prompt": "Cabin Door & Window",
               "expectation": "LATCHED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -236,6 +540,66 @@
               "prompt": "Departure Briefing",
               "expectation": "COMPLETE",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "USEFUL SPEEDS TO REMEMBER",
+              "type": "ITEM_PLAINTEXT",
+              "centered": true
+            },
+            {
+              "prompt": "Vr (Rotation)",
+              "expectation": "55 KIAS (65 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vx",
+              "expectation": "64 KIAS (74 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vy",
+              "expectation": "76 KIAS (87 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Cruise Climb",
+              "expectation": "85-100 KIAS (100-115 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Va (2550 lbs)",
+              "expectation": "110 KIAS (127 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vfe",
+              "expectation": "100 KCAS (115 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vne",
+              "expectation": "148 KCAS (171 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vs0",
+              "expectation": "53 KCAS (61 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vs1",
+              "expectation": "59 KCAS (68 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Vglide",
+              "expectation": "76 KIAS (87 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "V Short Field",
+              "expectation": "66 KIAS (76 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
         },
@@ -243,8 +607,8 @@
           "title": "Clear for Takeoff",
           "items": [
             {
-              "prompt": "Fuel Pump",
-              "expectation": "ON",
+              "prompt": "Electric Fuel Pump",
+              "expectation": "ON - CHECK FUEL PRESSURE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -265,6 +629,26 @@
             {
               "prompt": "Transponder",
               "expectation": "ON & ALT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Brakes",
+              "expectation": "RELEASE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ]
+        },
+        {
+          "title": "Takeoff",
+          "items": [
+            {
+              "prompt": "Rotate",
+              "expectation": "55 KIAS (65 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Climb (Vy)",
+              "expectation": "76 KIAS (87 MPH)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -300,12 +684,17 @@
             },
             {
               "prompt": "Best Angle (Vx)",
-              "expectation": "64 KIAS",
+              "expectation": "64 KIAS (74 MPH)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Best Rate (Vy)",
-              "expectation": "76 KIAS",
+              "expectation": "76 KIAS (87 MPH)",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Cruise Climb",
+              "expectation": "85-100 KIAS (100-115 MPH)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -414,13 +803,13 @@
           "title": "Shutdown",
           "items": [
             {
-              "prompt": "Avionics",
+              "prompt": "Avionics & Electrical Switches",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Throttle",
-              "expectation": "IDLE",
+              "expectation": "IDLE (1200 RPM)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -461,6 +850,41 @@
             {
               "prompt": "Headsets and Personal Items",
               "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Plan",
+              "expectation": "CLOSE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ]
+        },
+        {
+          "title": "Aircraft Data",
+          "items": [
+            {
+              "prompt": "Max Gross Weight",
+              "expectation": "2550 LBS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Empty Weight",
+              "expectation": "1542 LBS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Empty Moment",
+              "expectation": "133729 IN-LBS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Total Fuel",
+              "expectation": "50 GAL",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Usable Fuel",
+              "expectation": "48 GAL",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -809,8 +1233,8 @@
           "title": "Engine Failure Memory Items",
           "items": [
             {
-              "prompt": "A - Airspeed",
-              "expectation": "76 KT",
+              "prompt": "A - Airspeed (Best Glide)",
+              "expectation": "76 KIAS (87 MPH)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -998,7 +1422,7 @@
           "title": "Power Off Landing",
           "items": [
             {
-              "prompt": "Locate a suitable field. When field can easily be reached, slow to 66 KIAS for shortest landing.",
+              "prompt": "Locate a suitable field. When field can easily be reached, slow to 66 KIAS (76 MPH) for shortest landing.",
               "type": "ITEM_PLAINTEXT"
             },
             {
