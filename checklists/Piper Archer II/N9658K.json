@@ -437,8 +437,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Vacuum",
-              "expectation": "4.8-5.2",
+              "prompt": "Vacuum (Suction)",
+              "expectation": "4.8-5.2 IN HG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -478,7 +478,7 @@
           "items": [
             {
               "prompt": "Flight Instruments",
-              "expectation": "CHECK",
+              "expectation": "CHECK & SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -518,7 +518,7 @@
             },
             {
               "prompt": "Flaps (Normal UP, Short/Soft Field 25)",
-              "expectation": "SET",
+              "expectation": "CHECK & SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -634,6 +634,11 @@
             {
               "prompt": "Brakes",
               "expectation": "RELEASE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Area",
+              "expectation": "CLEAR",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -803,13 +808,13 @@
           "title": "Shutdown",
           "items": [
             {
-              "prompt": "Avionics & Electrical Switches",
-              "expectation": "OFF",
+              "prompt": "Throttle",
+              "expectation": "IDLE (1200 RPM)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Throttle",
-              "expectation": "IDLE (1200 RPM)",
+              "prompt": "Avionics & Electrical Switches",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1428,6 +1433,11 @@
             {
               "prompt": "When committed to landing:",
               "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Throttle",
+              "expectation": "CLOSE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Ignition",
