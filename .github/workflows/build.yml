@@ -26,9 +26,29 @@ jobs:
         uses: alexnj/aviation-checklist-compiler-action@914036e2c5fbd0532935256903730adef0ec6cc7 # main @ 2026-02-03
         with:
           efis_editor_ref: 995a2efb9dcfc2250d037cdc45611431835d43aa # rdamazio/efis-editor @ 2026-06-04
+          create_release: false # we publish releases below
 
-      # The compiler overwrites a single "latest" release. Also keep a permanent,
-      # dated release per build so it's clear what's loaded in ForeFlight.
+      # Rebuild "latest" from scratch each time so files for removed checklists
+      # don't linger and the tag tracks the current commit. Runs only after a
+      # successful compile, so a failed build never leaves you without "latest".
+      - name: Remove previous "latest" release
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release delete latest --cleanup-tag --yes || true
+
+      - name: Publish "latest" release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
+        with:
+          tag_name: latest
+          name: Latest checklists
+          body: Always the most recent build of main (${{ github.sha }}).
+          make_latest: true
+          files: output-release/*
+
+      # Also keep a permanent, dated release per build so it's clear what's
+      # loaded in ForeFlight.
       - name: Compute release tag
         if: github.ref == 'refs/heads/main'
         id: tag
@@ -43,4 +63,5 @@ jobs:
           body: |
             Built from ${{ github.sha }}.
             Commit: ${{ github.event.head_commit.message }}
+          make_latest: false
           files: output-release/*
