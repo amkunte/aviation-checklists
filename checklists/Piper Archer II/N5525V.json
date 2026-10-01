@@ -901,6 +901,35 @@
               "prompt": "Carburetor Heat",
               "expectation": "AS REQUIRED",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "GUMPS CHECK",
+              "type": "ITEM_TITLE"
+            },
+            {
+              "prompt": "Gas",
+              "expectation": "FULLEST TANK, FUEL PUMP ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Undercarriage",
+              "expectation": "FIXED - DOWN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Mixture",
+              "expectation": "RICH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Propeller",
+              "expectation": "FIXED PITCH - N/A",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Seat Belts",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
         },
