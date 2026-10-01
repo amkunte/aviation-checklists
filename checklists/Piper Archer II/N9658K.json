@@ -267,6 +267,16 @@
           "title": "Before Starting Engine",
           "items": [
             {
+              "prompt": "Preflight Inspection",
+              "expectation": "COMPLETE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Passenger Briefing",
+              "expectation": "COMPLETE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Seats & Belts",
               "expectation": "ADJUST & LOCK",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -277,13 +287,13 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Radios & Switches",
-              "expectation": "OFF",
+              "prompt": "Circuit Breakers",
+              "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Circuit Breakers",
-              "expectation": "CHECK",
+              "prompt": "Radios & Electrical Switches",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -304,6 +314,26 @@
             {
               "prompt": "Fuel Selector",
               "expectation": "DESIRED TANK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Foreflight & Recorders",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
+              "prompt": "Sentry On",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Foreflight Devices",
+              "expectation": "CONNECTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Foreflight Track Recording",
+              "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -347,6 +377,11 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Beacon",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Area",
               "expectation": "CLEAR",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -370,15 +405,80 @@
               "prompt": "Electric Fuel Pump",
               "expectation": "OFF - CHECK FUEL PRESSURE",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ]
+        },
+        {
+          "title": "Before Taxi",
+          "items": [
+            {
+              "prompt": "Mixture",
+              "expectation": "LEANED FOR TAXI",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Radios, Avionics, Beacon",
+              "prompt": "Flaps",
+              "expectation": "RETRACT, VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Nav, Taxi, Panel Lights",
+              "expectation": "ON AT NIGHT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Radios, Avionics",
               "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Mixture",
-              "expectation": "LEANED FOR TAXI",
+              "prompt": "Headset ANR",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Intercom",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ATIS",
+              "expectation": "RECORD",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Altimeter",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Heading Indicator",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Compass Deviation Card",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Engine Instruments",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Parking Brake",
+              "expectation": "RELEASE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flaps Retracted",
+              "expectation": "DOUBLE CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ground",
+              "expectation": "CONTACT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
@@ -403,6 +503,11 @@
             },
             {
               "prompt": "Steering",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Gyroscopic Instruments",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
@@ -482,7 +587,17 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Radios",
+              "prompt": "Sentry",
+              "expectation": "CONFIRM TRAFFIC",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Navigation",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Frequencies",
               "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -522,6 +637,11 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Autopilot",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Elevator & Rudder Trim",
               "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -539,6 +659,11 @@
             {
               "prompt": "Departure Briefing",
               "expectation": "COMPLETE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Tower",
+              "expectation": "CONTACT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
