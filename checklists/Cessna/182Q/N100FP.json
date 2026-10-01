@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "N100FP",
-    "makeAndModel": "Cessna Skylane 182P (C182)",
-    "aircraftInfo": "N100FP",
+    "makeAndModel": "Cessna Skylane 182P/182Q (C182)",
+    "aircraftInfo": "N100FP (182P), N1080M (182Q)",
     "manufacturerInfo": "Cessna"
   },
   "groups": [
@@ -1078,28 +1078,32 @@
             },
             {
               "prompt": "GUMPS CHECK",
-              "type": "ITEM_PLAINTEXT",
-              "centered": true
+              "type": "ITEM_TITLE"
             },
             {
-              "prompt": "GAS (AS NEEDED)",
-              "type": "ITEM_PLAINTEXT"
+              "prompt": "Gas",
+              "expectation": "AS NEEDED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "UNDERCARRIAGE (COWLS OPEN)",
-              "type": "ITEM_PLAINTEXT"
+              "prompt": "Undercarriage",
+              "expectation": "COWLS OPEN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "MIXTURE (FULL RICH)",
-              "type": "ITEM_PLAINTEXT"
+              "prompt": "Mixture",
+              "expectation": "FULL RICH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "PROPELLER (FULL IN)",
-              "type": "ITEM_PLAINTEXT"
+              "prompt": "Propeller",
+              "expectation": "FULL IN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "SEAT BELTS (SECURE)",
-              "type": "ITEM_PLAINTEXT"
+              "prompt": "Seat Belts",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
         },
