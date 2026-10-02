@@ -43,7 +43,7 @@ jobs:
         with:
           tag_name: latest
           name: Latest checklists
-          body: Always the most recent build of main (${{ github.sha }}).
+          body_path: output.md  # checklist × format table written by the compiler
           make_latest: true
           files: output-release/*
 
@@ -54,14 +54,23 @@ jobs:
         id: tag
         run: echo "tag=v$(date -u +%Y.%m.%d)-${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
 
+      # The compiler's table links to /download/latest/; repoint it at this tag
+      # so the versioned release's links stay valid after "latest" moves on.
+      - name: Build versioned release notes
+        if: github.ref == 'refs/heads/main'
+        run: |
+          {
+            echo "Built from ${{ github.sha }}."
+            echo
+            sed 's#releases/download/latest/#releases/download/${{ steps.tag.outputs.tag }}/#g' output.md
+          } > output-versioned.md
+
       - name: Publish versioned release
         if: github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: Checklists ${{ steps.tag.outputs.tag }}
-          body: |
-            Built from ${{ github.sha }}.
-            Commit: ${{ github.event.head_commit.message }}
+          body_path: output-versioned.md
           make_latest: false
           files: output-release/*
