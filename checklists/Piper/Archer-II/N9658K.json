@@ -335,6 +335,16 @@
               "prompt": "Foreflight Track Recording",
               "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Audio Recorder",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "GoPro Recorder",
+              "expectation": "Mounted",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
         },
@@ -732,6 +742,11 @@
           "title": "Clear for Takeoff",
           "items": [
             {
+              "prompt": "GoPro Recording",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Electric Fuel Pump",
               "expectation": "ON - CHECK FUEL PRESSURE",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -955,6 +970,16 @@
               "prompt": "Strobe Lights",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "GoPro Recording",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Audio Recorder",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
         },
@@ -1007,13 +1032,48 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Headsets and Personal Items",
+              "prompt": "Flight Plan",
+              "expectation": "CLOSE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "PERSONAL ITEMS",
+              "type": "ITEM_TITLE",
+              "centered": true
+            },
+            {
+              "prompt": "GoPro",
               "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Flight Plan",
-              "expectation": "CLOSE",
+              "prompt": "Audio Recorder",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "SENTRY",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad and Mount",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Headset",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Kneepad",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "VLD / Foggles",
+              "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ]
